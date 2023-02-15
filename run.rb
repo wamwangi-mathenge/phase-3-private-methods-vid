@@ -1,3 +1,5 @@
+require 'pry'
+
 class Bartender
 
     attr_accessor :name
@@ -19,4 +21,10 @@ class Bartender
 end
 
 phil = Bartender.new("Phil")
-puts phil.intro
+nancy = Bartender.new("Nancy")
+
+# puts phil.intro
+
+Bartender.all
+
+binding.pry
