@@ -30,23 +30,26 @@ class Bartender
     private
 
     def choose_liquor
-        @cocktail_ingredients << "whiskey"
+        @cocktail_ingredients << 'whiskey'
     end
 
     def choose_mixer
-        @cocktail_ingredients << "vermouth"
+        @cocktail_ingredients << 'vermouth'
     end
 
     def choose_garnish
-        @cocktail_ingredients << "olives"
+        @cocktail_ingredients << 'olives'
     end
 end
 
 phil = Bartender.new("Phil")
-nancy = Bartender.new("Nancy")
+# nancy = Bartender.new("Nancy")
 
 # puts phil.intro
 
-Bartender.all
+# Bartender.all
+
+# phil.choose_liquor - This errors out
+phil.make_drink
 
 binding.pry
